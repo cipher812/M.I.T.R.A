@@ -1,0 +1,40 @@
+<html>
+
+    <head>
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content-width="device-width">
+        <title>Remove a specific table row using jQuery.</title>
+        <script>
+            $(document).ready(function () {
+                $("#tbUser").on('click', '.btnDelete', function () {
+                    $(this).closest('tr').remove();
+                });
+            });
+        </script>
+    </head>
+
+    <body>
+        <table id="tbUser">
+            <tr>
+                <th>Sr</th>
+                <th>Name</th>
+                <th>Location</th>
+                <th></th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Amit</td>
+                <td>Ghatkopar</td>
+                <td><button class="btnDelete">Delete</button></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Vicky</td>
+                <td>Powai</td>
+                <td><button class="btnDelete">Delete</button></td>
+            </tr>
+        </table>
+    </body>
+
+</html>

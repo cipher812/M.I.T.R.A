@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <link rel="stylesheet" href="main.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+    </head>
+    <body>
+        <div class="limiter">
+            <img src="logo.png" class="mainback">
+            <div class="containerOut">
+                <span class="dot"><img src="logo.png"></span>
+                <form class="loginForm">
+                    <h1>Login</h1>
+                    <div class="textBoxdiv">
+                        <input type="text">
+                        <span data-placeholder="User Id"></span>
+                    </div>
+                    <div class="textBoxdiv">
+                        <input type="password">
+                        <span data-placeholder="Password"></span>
+                    </div>
+                    <input type="submit" value="Login" class="loginBtn">
+                </form>
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript">
+        $(".textBoxdiv input").on("focus",function(){
+            $(this).addClass("focus");
+        });
+        $(".textBoxdiv input").on("blur",function(){
+            if($(this).val()=="")
+            $(this).removeClass("focus");
+        });
+    </script>
+</html>
