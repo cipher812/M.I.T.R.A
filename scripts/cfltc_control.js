@@ -4,6 +4,7 @@ $(document).ready(function () {
         
         var aid = $('#aid').val();
         var aname = $('#aname').val();
+        var award = $('#award').val();
         var apass = $('#apassword').val();
         var atno = $('#atno').val();
 
@@ -18,6 +19,7 @@ $(document).ready(function () {
             data: {
                 id: aid,
                 name:aname,
+                ward:award,
                 password:apass,
                 tno:atno
             },
